@@ -1,0 +1,23 @@
+.pdca {
+	height: 300px;
+	width: 300px;
+	margin-bottom: 20px auto;
+	animation: 0.1s linear infinite cycling;
+}
+
+.cycling {
+	animation: 0.1s linear infinite cycling;
+}
+
+@keyframes cycling {
+	from {
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	to {
+		transform: rotate3d(0, 0, 1, 360deg);
+	}
+}
+
+.paused {
+	animation-play-state: paused;
+}
