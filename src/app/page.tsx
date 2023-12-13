@@ -1,5 +1,5 @@
 "use client";
-import { useState, MouseEvent } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import pdca from "../../public/images/pdca.png";
 import "@/app/ui/rotate.scss";
