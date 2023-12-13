@@ -4,6 +4,7 @@ import Image from "next/image";
 import pdca from "../../public/images/pdca.png";
 import "@/app/ui/rotate.scss";
 import { MoveButton } from "./components/button/move_button";
+import ShareButton from "./components/button/share_button";
 
 export default function Home() {
   const [isMoved, setIsMoved] = useState(false);
@@ -38,6 +39,10 @@ export default function Home() {
         onClick={() => handleMoveButtonClick(!isMoved)}
         title={isMoved ? "停止" : "まわす"}
         buttonStyle={isMoved ? buttonStyles.stopped : buttonStyles.moving}
+      />
+      <ShareButton
+        title="X"
+        buttonStyle="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
       />
     </>
   );
